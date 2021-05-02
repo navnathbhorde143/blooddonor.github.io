@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+          function submitclick(){
+           document.getElementById("boxdetails").style.display="inline";
+           document.getElementById("lblname").innerHTML=document.getElementById("name").value;
+           document.getElementById("lbladd").innerHTML=document.getElementById("add").value;
+          }
+        </script>
+
+    </head>
+    <style>
+        form{
+            height: 200px;
+        }
+    </style>
+    <body>
+        <div class="form">
+            <form>
+                <label>name</label>
+                <input type="text"  id="name">
+                <label>add</label>
+                <input type="text"  id="add">
+                <button onclick="submitclick()">submit</button>
+            </form>
+        </div>
+        <div class="box" id="boxdetails" style="display:inline;">
+            <h2>donar info</h2>
+        <dl>
+            <dt>name</dt>
+            <dd id="lblname"></dd>
+            <dt>address</dt>
+            <dd id="lbladd"></dd>
+            <dt>gender</dt>
+            <dd id="lblgen"></dd>
+            <dt>age</dt>
+            <dd id="lblgen"></dd>
+            <dt>blood group</dt>
+            <dd id="lblbld"></dd>
+            <dt>phone number</dt>
+            <dd id="lblnum"></dd>
+        </dl>
+        <div class="text-center">
+         <button class="btn btn-danger">close</button>
+        </div></div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h2>arrow function using a javascript</h2>
+        <p id="demo"></p>
+        <script>
+            let mypromise=new promise(function(myResolve,myReject)){
+                setTimeout(function(){
+                    myResolve("i love u!!");},3000);});
+                    mypromise.then(function(value)){
+                        document.getElementById("demo").innerHTML=value;
+                    });
+            
+        </script>
+    </body>
+</html>
